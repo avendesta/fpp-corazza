@@ -23,7 +23,7 @@ public class Main {
 		customers[1] = c2;
 		
 		for(Customer c : customers){
-			if(c.getBillingAddress().getCity()=="Chicago")
+			if(c.getBillingAddress().getCity().equals("Chicago"))
 				System.out.println(c.toString());
 		}
 	}
