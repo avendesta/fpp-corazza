@@ -1,0 +1,7 @@
+A. (ii)
+  because instance variables of member inner class can be accessed from the outer class, but a local inner class is not used outside its outer class.
+B. (iii)
+  For this case anonymous inner class is suitable because you don't need to create Auxillary method, which is useless if the method is used only few times.
+C. (i)
+  - Loop creates instances of the inner class each time it is created if the inner class is a local inner class,
+     so local inner classes are not good; Member classes do not have such problem.
