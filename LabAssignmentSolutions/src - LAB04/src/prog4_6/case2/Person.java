@@ -20,7 +20,7 @@ public class Person {
 	
 	public boolean equals(Object ob) {
 		if(ob == null) return false;
-		if(!(ob instanceof Person)) return false;
+		if(getClass() != ob.getClass()) return false;
 		Person p = (Person)ob;
 		return p.name.equals(name) && p.dateOfBirth.equals(dateOfBirth);
 	}

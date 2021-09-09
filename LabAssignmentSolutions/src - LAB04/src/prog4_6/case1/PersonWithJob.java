@@ -11,12 +11,4 @@ public class PersonWithJob extends Person {
 	public double getSalary() {
 		return salary;
 	}
-	
-	@Override
-	public boolean equals(Object ob) {
-		if(ob == null) return false;
-		if(!(ob instanceof PersonWithJob)) return false;
-		PersonWithJob p = (PersonWithJob)ob;
-		return p.getName().equals(this.getName()) && p.getDateOfBirth().equals(this.getDateOfBirth());
-	}
 }
