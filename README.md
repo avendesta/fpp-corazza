@@ -1,6 +1,6 @@
 # fpp-corazza
 
-<h1 align=center>Fundamental Programming Principles </h1>
+<h1 align=center>Fundamental Programming Practices </h1>
 
 Course Instructor: Paul Corazza (PhD)
 
