@@ -1,9 +1,6 @@
 package prog3_1;
 
 public class Account {
-//	public final static String CHECKING = "checking";
-//	public final static String SAVINGS = "savings";
-//	public final static String RETIREMENT = "retirement";
 	private final static double DEFAULT_BALANCE = 0.0;
 	private double balance;
 	private AccountType acctType;
