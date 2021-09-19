@@ -13,8 +13,9 @@ public class NodeQueue {
 	public void enqueue(String s) {
 		Node newTail = new Node();
 		newTail.data = s;
-		if(tail == null) {
+		if(tail == null) { // which is the same as `head == null`
 			tail = newTail;
+			head = newTail;
 			return;
 		}
 		newTail.next = tail;
