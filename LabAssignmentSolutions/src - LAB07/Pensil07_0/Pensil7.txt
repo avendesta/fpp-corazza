@@ -1,0 +1,11 @@
+Answer for the Pencil and Paper Assignment for lesson 7
+
+1. d - there is no appropriate base case; it will call recurse("") infinite times
+2. d - there is no way to reach the base cases
+3. We should explicitly call the copy method of the enclosing class with
+    			Object copy = Enclosing.this.clone();
+
+   then the console will print 
+         Inside Enclosing.clone()
+         packagename.Enclosing
+
