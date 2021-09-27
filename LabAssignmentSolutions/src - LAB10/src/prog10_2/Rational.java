@@ -33,11 +33,8 @@ public class Rational implements Comparable<Rational>{
 		return (this.p*rat.q)==(this.q*rat.p);
 	}
 	@Override
-	public int hashCode() { // 2^p * 3^q , uniquely represent a rational number if q, p are coprimes
-							// otherwise we can divide by their common divisor to make it unique
-		if(p>0)
-			return (int) ( Math.pow(2, p/GCF(p,q))*Math.pow(3, q/GCF(p,q)) );
-		return -(int) ( Math.pow(2, -p/GCF(-p,q))*Math.pow(3, q/GCF(-p,q)) );
+	public int hashCode() {
+		return Objects.hash(p/GCF(p,q),q/GCF(p,q));
 	}
 	public static int GCF(int a, int b) {
 	    if (b == 0) return a;
